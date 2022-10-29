@@ -1551,7 +1551,7 @@ header.sticky .menu-curve > ul:after {
   width: 100%;
 }
 .select-box .select2-container--default .select2-selection--single {
-  border: 0 none;
+  border: 1px solid #ccc;
   height: 53px;
 }
 .select-box
@@ -4730,7 +4730,7 @@ blockquote > p {
 }
 form#contactform .text-field {
   background: #f9f9f9 none repeat scroll 0 0;
-  border: medium none;
+  border: 1px solid #ccc;
   box-shadow: none;
 }
 form#contactform textarea.text-field {
@@ -7023,6 +7023,7 @@ header.simple-header.stick.sticky {
   color: #858585;
   float: left;
   font-family: lato;
+  border: 1px solid #ccc;
   font-size: 11px;
   font-weight: 400;
   height: 53px;
@@ -7045,7 +7046,7 @@ header.simple-header.stick.sticky {
   width: 90%;
 }
 .booking-form > form textarea.text-field {
-  border: 0 none;
+  border: 1px solid #ccc;
 
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -7419,6 +7420,7 @@ header.simple-header.stick.sticky {
   padding: 18px 25px;
   position: relative;
   width: 100%;
+  border: 1px solid #ccc;
 }
 .datepicker-field > input {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
