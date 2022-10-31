@@ -30,7 +30,7 @@
             <div class="logo-menu-sec">
                 <div class="logo-menu">
                     <div class="logo">
-                        <a itemprop="url" href="index.html" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
+                        <a itemprop="url" href="{% url 'index' %}" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
                     </div>
                     <div class="quick-contact">
                         <ul>
@@ -54,15 +54,15 @@
                 <nav class="menu-curve">
                     <ul>
 
-                        <li><a itemprop="url" href="index.html" title="">HOME</a></li>
+                        <li><a itemprop="url" href="{% url 'index' %}" title="">HOME</a></li>
 
-                        <li><a itemprop="url" href="about.html" title="">ABOUT</a></li>
+                        <li><a itemprop="url" href="{% url 'about' %}" title="">ABOUT</a></li>
 
-                        <li><a itemprop="url" href="services.html" title="">SERVICE</a></li>
+                        <li><a itemprop="url" href="{% url 'service' %}" title="">SERVICE</a></li>
 
-                        <li><a itemprop="url" href="gallery1.html" title="">GALLERY</a></li>
+                        <li><a itemprop="url" href="{% url 'gallery' %}" title="">GALLERY</a></li>
 
-                        <li><a itemprop="url" href="contact.html" title="">CONTACT</a></li>
+                        <li><a itemprop="url" href="{% url 'contact' %}" title="">CONTACT</a></li>
 
                     </ul>
                 </nav>
@@ -107,7 +107,7 @@
                 <div class="container">
                     <div class="responsive-logo">
                         <div class="logo">
-                            <a itemprop="url" href="index.html" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
+                            <a itemprop="url" href="{% url 'index' %}" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
                         </div>
                     </div>
                     <span class="responsive-btn"><i class="fa fa-list"></i></span>
@@ -118,13 +118,13 @@
                             <li><i class="fa fa-paper-plane"></i><a itemprop="url" href="#" title="" class="popup2">REQUEST A RATE</a></li>
                         </ul>
                         <ul>
-                            <li><a itemprop="url" href="index.html" title="">HOME</a>
+                            <li><a itemprop="url" href="{% url 'index' %}" title="">HOME</a>
                             </li>
-                            <li><a itemprop="url" href="about.html" title="">ABOUT</a>
+                            <li><a itemprop="url" href="{% url 'about' %}" title="">ABOUT</a>
                             </li>
-                            <li><a itemprop="url" href="services.html" title="">SERVICES</a>
+                            <li><a itemprop="url" href="{% url 'service' %}" title="">SERVICES</a>
                             </li>
-                            <li><a itemprop="url" href="#" title="">GALLERY</a>
+                            <li><a itemprop="url" href="{% url 'gallery' %}" title="">GALLERY</a>
                             </li>
                             <li class="menu-item-has-children"><a itemprop="url" href="#" title="">PAGES</a>
                                 <ul>
@@ -135,7 +135,7 @@
                                     <li><a itemprop="url" href="about.html" title="">About</a></li>
                                 </ul>
                             </li>
-                            <li><a itemprop="url" href="contact.html" title="">CONTACT</a></li>
+                            <li><a itemprop="url" href="{% url 'contact' %}" title="">CONTACT</a></li>
                         </ul>
                     </div><!-- Responsive Menu -->
                 </div>
@@ -352,7 +352,7 @@
 
                         <div class="ls-slide" style="line-height:28px; font-family:lato; font-size:15px; color:#ffffff; top:445px; left:100px;" data-ls="offsetxout:left; offsetxin:right; durationin:1300; delayin:1200; easingin:easeOutBack; fadein:false; easingout:easeInBack; fadeout:false;">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris <br /> ipsum velit. Nam nec tellus aodio tincidunt auctor.</div>
 
-                        <a href="book-now.html" itemprop="url" title="" class="ls-slide slide-icon" style="padding:16px 45px; background:#ffb400; color:#ffffff; font-size:12px; top:539px; left:100px;" data-ls="offsetxout:left; offsetyin:bottom; durationin:1500; delayin:1300; easingin:easeOutBack; fadein:false; easingout:easeInBack; fadeout:false;">ORDER NOW</a>
+                        <a href="{% url 'booking' %}" itemprop="url" title="" class="ls-slide slide-icon" style="padding:16px 45px; background:#ffb400; color:#ffffff; font-size:12px; top:539px; left:100px;" data-ls="offsetxout:left; offsetyin:bottom; durationin:1500; delayin:1300; easingin:easeOutBack; fadein:false; easingout:easeInBack; fadeout:false;">ORDER NOW</a>
 
                         <img src="{% static 'web/images/resource/slide-model.png' %}" alt="" itemprop="image" class="ls-slide" style="top:0; left:540px;" data-ls="offsetyout:top; offsetyin:bottom; durationin:2000; delayin:1500; easingin:easeOutBack; fadein:false; easingout:easeInBack; fadeout:false;" />
                     </div><!-- Slide 1 -->
@@ -381,7 +381,7 @@
 
                         <div class="ls-slide" style="top:425px; left:0;line-height:28px; font-family:lato; font-size:15px; color:#ffffff;" data-ls="offsetxout:left; offsetxin:right; durationin:1500; delayin:700; easingin:easeOutBack; fadein:false; easingout:easeInBack; fadeout:false;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br /> nascetur ridiculus mus dolor sit amet, consectetu.</div>
 
-                        <a href="services-calculator.html" itemprop="url" title="" class="ls-slide slide-btn slide-icon" style="top:515px; left:0; text-transform:uppercase; padding:16px 40px; color:#ffb400; border:2px solid #ffb400; font-family:raleway; font-size:13px; font-weight:700;" data-ls="offsetxout:left; offsetyin:bottom; durationin:1700; delayin:1000; easingin:easeOutBack; fadein:false; easingout:easeInBack; fadeout:false;">CALCULATE PACKAGE</a>
+                        <a href="{% url 'volume' %}" itemprop="url" title="" class="ls-slide slide-btn slide-icon" style="top:515px; left:0; text-transform:uppercase; padding:16px 40px; color:#ffb400; border:2px solid #ffb400; font-family:raleway; font-size:13px; font-weight:700;" data-ls="offsetxout:left; offsetyin:bottom; durationin:1700; delayin:1000; easingin:easeOutBack; fadein:false; easingout:easeInBack; fadeout:false;">CALCULATE PACKAGE</a>
                     </div><!-- Slide 3 -->
                 </div>
             </div>
@@ -424,7 +424,7 @@
                                             <img itemprop="image" src="{% static 'web/images/resource/packages1.jpg' %}" alt="" />
                                             <div class="packages-info">
                                                 <img src="{% static 'web/images/resource/packages-info1.png' %}" alt="" itemprop="image" />
-                                                <h2 itemprop="name"><a itemprop="url" href="packages-detail.html" title="">Air Freight</a></h2>
+                                                <h2 itemprop="name"><a itemprop="url" href="#" title="">Air Freight</a></h2>
                                                 <span>Delivery 3-4 Days</span>
                                                 <ul>
                                                     <li>Flat Rate For Each Shipment.</li>
@@ -441,7 +441,7 @@
                                             <img itemprop="image" src="{% static 'web/images/resource/packages2.jpg' %}" alt="" />
                                             <div class="packages-info">
                                                 <img src="{% static 'web/images/resource/packages-info2.png' %}" alt="" itemprop="image" />
-                                                <h2 itemprop="name"><a itemprop="url" href="packages-detail.html" title="">Road Freight</a></h2>
+                                                <h2 itemprop="name"><a itemprop="url" href="#" title="">Road Freight</a></h2>
                                                 <span>Delivery 3-4 Days</span>
                                                 <ul>
                                                     <li>100% Sure And Safe Cargo Service</li>
@@ -458,7 +458,7 @@
                                             <img itemprop="image" src="{% static 'web/images/resource/packages3.jpg' %}" alt="" />
                                             <div class="packages-info">
                                                 <img src="{% static 'web/images/resource/packages-info3.png' %}" alt="" itemprop="image" />
-                                                <h2 itemprop="name"><a itemprop="url" href="packages-detail.html" title="">Ocean Freight</a></h2>
+                                                <h2 itemprop="name"><a itemprop="url" href="#" title="">Ocean Freight</a></h2>
                                                 <span>Delivery 3-4 Days</span>
                                                 <ul>
                                                     <li>No Commission Or Monthly Fees</li>
@@ -553,7 +553,7 @@
                                     <div class="widget">
                                         <div class="about-widget">
                                             <div class="logo">
-                                                <a itemprop="url" href="index.html" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
+                                                <a itemprop="url" href="{% url 'index' %}" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
                                             </div>
                                             <p itemprop="description">The Professional Courier provides domestic & international courier service. The Professional Courier is one of the largest air freight transportation providers in the world.</p>
                                             <ul class="social-btn">
@@ -574,11 +574,11 @@
                                                 </div>
                                                 <div class="links-widget">
                                                     <ul>
-                                                        <li><a itemprop="url" href="index.html" title="">Home</a></li>
-                                                        <li><a itemprop="url" href="about.html" title="">About Us</a></li>
-                                                        <li><a itemprop="url" href="services.html" title="">Services</a></li>
-                                                        <li><a itemprop="url" href="gallery1.html" title="">Gallery</a></li>
-                                                        <li><a itemprop="url" href="contact.html" title="">Contact</a></li>
+                                                        <li><a itemprop="url" href="{% url 'index' %}" title="">Home</a></li>
+                                                        <li><a itemprop="url" href="{% url 'about' %}" title="">About Us</a></li>
+                                                        <li><a itemprop="url" href="{% url 'service' %}" title="">Services</a></li>
+                                                        <li><a itemprop="url" href="{% url 'gallery' %}" title="">Gallery</a></li>
+                                                        <li><a itemprop="url" href="{% url 'contact' %}" title="">Contact</a></li>
                                                     </ul>
                                                 </div>
                                             </div><!-- Widget -->
@@ -628,7 +628,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 column">
-                            <span>&copy; 2022 <a itemprop="url" title="" href="index.html">The Professional Courier</a> - All Rights Reserved</span>
+                            <span>&copy; 2022 <a itemprop="url" title="" href="{% url 'index' %}">The Professional Courier</a> - All Rights Reserved</span>
                         </div>
                         <div class="col-md-6 column">
                             <span><a itemprop="url" title="" href="https://ekattorit.com/" target="_blank">Developed & Maintained by: <b style="color: green;">EKATTOR</b><b style="color: red;"> iT</b></span>

@@ -31,7 +31,7 @@
             <div class="logo-menu-sec">
                 <div class="logo-menu">
                     <div class="logo">
-                        <a itemprop="url" href="index.html" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
+                        <a itemprop="url" href="{% url 'index' %}" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
                     </div>
                     <div class="quick-contact">
                         <ul>
@@ -55,15 +55,15 @@
                 <nav class="menu-curve">
                     <ul>
 
-                        <li><a itemprop="url" href="index.html" title="">HOME</a></li>
+                        <li><a itemprop="url" href="{% url 'index' %}" title="">HOME</a></li>
 
-                        <li><a itemprop="url" href="about.html" title="">ABOUT</a></li>
+                        <li><a itemprop="url" href="{% url 'about' %}" title="">ABOUT</a></li>
 
-                        <li><a itemprop="url" href="services.html" title="">SERVICE</a></li>
+                        <li><a itemprop="url" href="{% url 'service' %}" title="">SERVICE</a></li>
 
-                        <li><a itemprop="url" href="gallery1.html" title="">GALLERY</a></li>
+                        <li><a itemprop="url" href="{% url 'gallery' %}" title="">GALLERY</a></li>
 
-                        <li><a itemprop="url" href="contact.html" title="">CONTACT</a></li>
+                        <li><a itemprop="url" href="{% url 'contact' %}" title="">CONTACT</a></li>
 
                     </ul>
                 </nav>
@@ -108,7 +108,7 @@
                 <div class="container">
                     <div class="responsive-logo">
                         <div class="logo">
-                            <a itemprop="url" href="index.html" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
+                            <a itemprop="url" href="{% url 'index' %}" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
                         </div>
                     </div>
                     <span class="responsive-btn"><i class="fa fa-list"></i></span>
@@ -119,13 +119,13 @@
                             <li><i class="fa fa-paper-plane"></i><a itemprop="url" href="#" title="" class="popup2">REQUEST A RATE</a></li>
                         </ul>
                         <ul>
-                            <li><a itemprop="url" href="index.html" title="">HOME</a>
+                            <li><a itemprop="url" href="{% url 'index' %}" title="">HOME</a>
                             </li>
-                            <li><a itemprop="url" href="#" title="">ABOUT</a>
+                            <li><a itemprop="url" href="{% url 'about' %}" title="">ABOUT</a>
                             </li>
-                            <li><a itemprop="url" href="#" title="">SERVICES</a>
+                            <li><a itemprop="url" href="{% url 'service' %}" title="">SERVICES</a>
                             </li>
-                            <li><a itemprop="url" href="#" title="">GALLERY</a>
+                            <li><a itemprop="url" href="{% url 'gallery' %}" title="">GALLERY</a>
                             </li>
                             <li class="menu-item-has-children"><a itemprop="url" href="#" title="">PAGES</a>
                                 <ul>
@@ -136,7 +136,7 @@
                                     <li><a itemprop="url" href="about.html" title="">About</a></li>
                                 </ul>
                             </li>
-                            <li><a itemprop="url" href="contact.html" title="">CONTACT</a></li>
+                            <li><a itemprop="url" href="{% url 'contact' %}" title="">CONTACT</a></li>
                         </ul>
                     </div><!-- Responsive Menu -->
                 </div>
@@ -359,7 +359,7 @@
 											<span>M2 Warehouse</span>
 											<h3>Door To Door</h3>
 											<h5>SHIPPING</h5>
-											<a title="" href="services-calculator.html" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
+											<a title="" href="{% url 'volume' %}" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
 										</div>
 									</div><!-- Fancy Services -->
 								</div>
@@ -372,7 +372,7 @@
 											<span>M2 Warehouse</span>
 											<h3>Ground</h3>
 											<h5>SHIPPING</h5>
-											<a title="" href="services-calculator.html" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
+											<a title="" href="{% url 'volume' %}" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
 										</div>
 									</div><!-- Fancy Services -->
 								</div>
@@ -385,7 +385,7 @@
 											<span>M2 Warehouse</span>
 											<h3>Worldwide</h3>
 											<h5>DELIVERY</h5>
-											<a title="" href="services-calculator.html" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
+											<a title="" href="{% url 'volume' %}" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
 										</div>
 									</div><!-- Fancy Services -->
 								</div>
@@ -398,7 +398,7 @@
 											<span>M2 Warehouse</span>
 											<h3>Cargo Air</h3>
 											<h5>SHIPPING</h5>
-											<a title="" href="services-calculator.html" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
+											<a title="" href="{% url 'volume' %}" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
 										</div>
 									</div><!-- Fancy Services -->
 								</div>
@@ -411,7 +411,7 @@
 											<span>M2 Warehouse</span>
 											<h3>Courier Services</h3>
 											<h5>SHIPPING</h5>
-											<a title="" href="services-calculator.html" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
+											<a title="" href="{% url 'volume' %}" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
 										</div>
 									</div><!-- Fancy Services -->
 								</div>
@@ -423,7 +423,7 @@
 											<span>M2 Warehouse</span>
 											<h3>Fly Anywhere</h3>
 											<h5>SHIPPING</h5>
-											<a title="" href="services-calculator.html" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
+											<a title="" href="{% url 'volume' %}" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
 										</div>
 									</div><!-- Fancy Services -->
 								</div>
@@ -435,7 +435,7 @@
 											<span>M2 Warehouse</span>
 											<h3>Cargo Storage</h3>
 											<h5>SHIPPING</h5>
-											<a title="" href="services-calculator.html" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
+											<a title="" href="{% url 'volume' %}" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
 										</div>
 									</div><!-- Fancy Services -->
 								</div>
@@ -447,7 +447,7 @@
 											<span>M2 Warehouse</span>
 											<h3>Ocean Cargo</h3>
 											<h5>SHIPPING</h5>
-											<a title="" href="services-calculator.html" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
+											<a title="" href="{% url 'volume' %}" itemprop="url" class="theme-btn"><i class="fa fa-paper-plane"></i>Get A Rate</a>
 										</div>
 									</div><!-- Fancy Services -->
 								</div>
@@ -470,7 +470,7 @@
 									<div class="widget">
 										<div class="about-widget">
 											<div class="logo">
-												<a itemprop="url" href="index.html" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
+												<a itemprop="url" href="{% url 'index' %}" title=""><img itemprop="image" src="{% static 'web/images/resource/logo3.png' %}" alt="" /></a>
 											</div>
 											<p itemprop="description">The Professional Courier provides domestic & international courier service. The Professional Courier is one of the largest air freight transportation providers in the world.</p>
 											<ul class="social-btn">
@@ -491,11 +491,11 @@
 												</div>
 												<div class="links-widget">
 													<ul>
-														<li><a itemprop="url" href="index.html" title="">Home</a></li>
-														<li><a itemprop="url" href="about.html" title="">About Us</a></li>
-														<li><a itemprop="url" href="services.html" title="">Services</a></li>
-														<li><a itemprop="url" href="gallery1.html" title="">Gallery</a></li>
-														<li><a itemprop="url" href="contact.html" title="">Contact</a></li>
+														<li><a itemprop="url" href="{% url 'index' %}" title="">Home</a></li>
+														<li><a itemprop="url" href="{% url 'about' %}" title="">About Us</a></li>
+														<li><a itemprop="url" href="{% url 'service' %}" title="">Services</a></li>
+														<li><a itemprop="url" href="{% url 'gallery' %}" title="">Gallery</a></li>
+														<li><a itemprop="url" href="{% url 'contact' %}" title="">Contact</a></li>
 													</ul>
 												</div>
 											</div><!-- Widget -->
@@ -545,7 +545,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 column">
-                            <span>&copy; 2022 <a itemprop="url" title="" href="index.html">The Professional Courier</a> - All Rights Reserved</span>
+                            <span>&copy; 2022 <a itemprop="url" title="" href="{% url 'index' %}">The Professional Courier</a> - All Rights Reserved</span>
                         </div>
 						<div class="col-md-6 column">
                             <span><a itemprop="url" title="" href="https://ekattorit.com/" target="_blank">Developed & Maintained by: <b style="color: green;">EKATTOR</b><b style="color: red;"> iT</b></span>
